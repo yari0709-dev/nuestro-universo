@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Una carta para ti</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <div class="estrellas"></div>
+
+    <nav>
+        <h2>✦ Nuestro Universo</h2>
+        <div class="menu">
+            <a href="../index.html">Inicio</a>
+            <a href="historia.html">Historia</a>
+            <a href="recuerdos.html">Recuerdos</a>
+            <a href="carta.html">Carta</a>
+            <a href="universo.html">Universo</a>
+        </div>
+    </nav>
+
+    <main class="contenido-pagina">
+        <h1>Una carta desde mi corazón 💌</h1>
+
+        <p>Hay algo que quiero decirte...</p>
+
+        <button onclick="abrirCarta()">Abrir mi carta ❤️</button>
+
+        <div class="carta" id="miCarta" style="display:none">
+            <h2>Para el amor de mi vida</h2>
+
+            <p>
+                Mi amor, hoy celebramos nuestros 2 años y 2 meses.
+                Si el universo tiene millones de estrellas, yo solo
+                necesito una persona para sentir que tengo todo.
+            </p>
+
+            <p>
+                Gracias por estar conmigo, por cada sonrisa,
+                por cada momento y por hacer que mis días sean especiales.
+            </p>
+
+            <p>
+                Quiero que sigamos creando recuerdos, viajando,
+                riendo y cumpliendo nuestros sueños.
+            </p>
+
+            <p>
+                No importa cuántas galaxias existan, siempre
+                elegiría encontrarte a ti.
+            </p>
+
+            <h2>Te amo hasta el infinito y más allá. ❤️</h2>
+        </div>
+    </main>
+
+    <footer>Con todo mi amor ❤️</footer>
+
+    <script>
+        function abrirCarta() {
+            document.getElementById("miCarta").style.display = "block";
+            document.getElementById("miCarta").scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    </script>
+</body>
+</html>
